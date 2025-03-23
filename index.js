@@ -1,5 +1,20 @@
 // Parallax effect for .Image.Cover class
 document.addEventListener('DOMContentLoaded', function() {
+    // Startup animation for H1 headings
+    const headings = document.querySelectorAll('H1 Heading');
+    headings.forEach(heading => {
+        // Set initial styles
+        heading.style.opacity = '0';
+        heading.style.transform = 'translateY(20px)';
+        heading.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        
+        // Trigger animation after a small delay
+        setTimeout(() => {
+            heading.style.opacity = '1';
+            heading.style.transform = 'translateY(0)';
+        }, 300);
+    });
+
     // Get all elements with class .Image.Cover
     const parallaxImages = document.querySelectorAll('.Image.Cover');
     
