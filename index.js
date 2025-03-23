@@ -1,7 +1,7 @@
 // Parallax effect for .Image.Cover class
 document.addEventListener('DOMContentLoaded', function() {
     // Startup animation for H1 headings
-    const headings = document.querySelectorAll('H1 Heading');
+    const headings = document.querySelectorAll('H2 Heading');
     headings.forEach(heading => {
         // Set initial styles
         heading.style.opacity = '0';
